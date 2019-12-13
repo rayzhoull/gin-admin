@@ -3,10 +3,10 @@ package internal
 import (
 	"context"
 
-	"github.com/LyricTian/gin-admin/internal/app/errors"
-	"github.com/LyricTian/gin-admin/internal/app/model"
-	"github.com/LyricTian/gin-admin/internal/app/schema"
-	"github.com/LyricTian/gin-admin/pkg/util"
+	"github.com/rayzhoull/gin-admin/internal/app/errors"
+	"github.com/rayzhoull/gin-admin/internal/app/model"
+	"github.com/rayzhoull/gin-admin/internal/app/schema"
+	"github.com/rayzhoull/gin-admin/pkg/util"
 	"github.com/casbin/casbin"
 )
 

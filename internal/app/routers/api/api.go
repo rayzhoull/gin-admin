@@ -1,9 +1,9 @@
 package api
 
 import (
-	"github.com/LyricTian/gin-admin/internal/app/middleware"
-	"github.com/LyricTian/gin-admin/internal/app/routers/api/ctl"
-	"github.com/LyricTian/gin-admin/pkg/auth"
+	"github.com/rayzhoull/gin-admin/internal/app/middleware"
+	"github.com/rayzhoull/gin-admin/internal/app/routers/api/ctl"
+	"github.com/rayzhoull/gin-admin/pkg/auth"
 	"github.com/casbin/casbin"
 	"github.com/gin-gonic/gin"
 	"go.uber.org/dig"

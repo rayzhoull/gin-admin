@@ -1,10 +1,10 @@
 package gorm
 
 import (
+	"github.com/rayzhoull/gin-admin/pkg/logger"
+	"github.com/rayzhoull/gin-admin/pkg/util"
 	"time"
 
-	"github.com/LyricTian/gin-admin/pkg/logger"
-	"github.com/LyricTian/gin-admin/pkg/util"
 	"github.com/jinzhu/gorm"
 	"github.com/sirupsen/logrus"
 )

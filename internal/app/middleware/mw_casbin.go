@@ -1,9 +1,10 @@
 package middleware
 
 import (
-	"github.com/LyricTian/gin-admin/internal/app/config"
-	"github.com/LyricTian/gin-admin/internal/app/errors"
-	"github.com/LyricTian/gin-admin/internal/app/ginplus"
+	"fmt"
+	"github.com/rayzhoull/gin-admin/internal/app/config"
+	"github.com/rayzhoull/gin-admin/internal/app/errors"
+	"github.com/rayzhoull/gin-admin/internal/app/ginplus"
 	"github.com/casbin/casbin"
 	"github.com/gin-gonic/gin"
 )
@@ -20,6 +21,7 @@ func CasbinMiddleware(enforcer *casbin.Enforcer, skipper ...SkipperFunc) gin.Han
 		p := c.Request.URL.Path
 		m := c.Request.Method
 		if b, err := enforcer.EnforceSafe(ginplus.GetUserID(c), p, m); err != nil {
+			fmt.Println("xxxxxxxx : ", err.Error())
 			ginplus.ResError(c, errors.WithStack(err))
 			return
 		} else if !b {

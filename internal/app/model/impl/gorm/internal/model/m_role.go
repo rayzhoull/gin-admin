@@ -3,10 +3,10 @@ package model
 import (
 	"context"
 
-	"github.com/LyricTian/gin-admin/internal/app/errors"
-	"github.com/LyricTian/gin-admin/internal/app/model/impl/gorm/internal/entity"
-	"github.com/LyricTian/gin-admin/internal/app/schema"
-	"github.com/LyricTian/gin-admin/pkg/gormplus"
+	"github.com/rayzhoull/gin-admin/internal/app/errors"
+	"github.com/rayzhoull/gin-admin/internal/app/model/impl/gorm/internal/entity"
+	"github.com/rayzhoull/gin-admin/internal/app/schema"
+	"github.com/rayzhoull/gin-admin/pkg/gormplus"
 )
 
 // NewRole 创建角色存储实例

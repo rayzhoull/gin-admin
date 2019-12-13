@@ -1,7 +1,7 @@
 package app
 
 import (
-	"github.com/LyricTian/gin-admin/internal/app/config"
+	"github.com/rayzhoull/gin-admin/internal/app/config"
 	"github.com/google/gops/agent"
 )
 

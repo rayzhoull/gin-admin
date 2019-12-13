@@ -3,14 +3,14 @@ package main
 import (
 	"context"
 	"flag"
+	"github.com/rayzhoull/gin-admin/internal/app"
+	"github.com/rayzhoull/gin-admin/pkg/logger"
+	"github.com/rayzhoull/gin-admin/pkg/util"
 	"os"
 	"os/signal"
 	"sync/atomic"
 	"syscall"
 
-	"github.com/LyricTian/gin-admin/internal/app"
-	"github.com/LyricTian/gin-admin/pkg/logger"
-	"github.com/LyricTian/gin-admin/pkg/util"
 )
 
 // VERSION 版本号，

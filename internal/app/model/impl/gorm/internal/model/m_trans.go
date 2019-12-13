@@ -3,8 +3,8 @@ package model
 import (
 	"context"
 
-	"github.com/LyricTian/gin-admin/internal/app/errors"
-	"github.com/LyricTian/gin-admin/pkg/gormplus"
+	"github.com/rayzhoull/gin-admin/internal/app/errors"
+	"github.com/rayzhoull/gin-admin/pkg/gormplus"
 )
 
 // NewTrans 创建事务管理实例

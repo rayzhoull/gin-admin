@@ -2,11 +2,12 @@ package app
 
 import (
 	"context"
+	"fmt"
 
-	"github.com/LyricTian/gin-admin/internal/app/bll"
-	"github.com/LyricTian/gin-admin/internal/app/config"
-	"github.com/LyricTian/gin-admin/internal/app/schema"
-	"github.com/LyricTian/gin-admin/pkg/util"
+	"github.com/rayzhoull/gin-admin/internal/app/bll"
+	"github.com/rayzhoull/gin-admin/internal/app/config"
+	"github.com/rayzhoull/gin-admin/internal/app/schema"
+	"github.com/rayzhoull/gin-admin/pkg/util"
 	"go.uber.org/dig"
 )
 
@@ -97,6 +98,9 @@ func createMenus(ctx context.Context, trans bll.ITrans, menu bll.IMenu, parentID
 				Actions:   item.Actions,
 				Resources: item.Resources,
 			}
+
+			fmt.Printf("------------> %+v", sitem)
+
 			nsitem, err := menu.Create(ctx, sitem)
 			if err != nil {
 				return err

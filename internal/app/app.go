@@ -2,12 +2,12 @@ package app
 
 import (
 	"context"
+	"github.com/rayzhoull/gin-admin/internal/app/bll/impl"
+	"github.com/rayzhoull/gin-admin/internal/app/config"
+	"github.com/rayzhoull/gin-admin/pkg/auth"
+	"github.com/rayzhoull/gin-admin/pkg/logger"
 	"os"
 
-	"github.com/LyricTian/gin-admin/internal/app/bll/impl"
-	"github.com/LyricTian/gin-admin/internal/app/config"
-	"github.com/LyricTian/gin-admin/pkg/auth"
-	"github.com/LyricTian/gin-admin/pkg/logger"
 	"github.com/casbin/casbin"
 	"go.uber.org/dig"
 )
@@ -135,7 +135,7 @@ func BuildContainer() (*dig.Container, func()) {
 	// 注入认证模块
 	auther, err := InitAuth()
 	handleError(err)
-	container.Provide(func() auth.Auther {
+	_ = container.Provide(func() auth.Auther {
 		return auther
 	})
 

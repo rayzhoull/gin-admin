@@ -3,8 +3,8 @@ package entity
 import (
 	"context"
 
-	"github.com/LyricTian/gin-admin/internal/app/schema"
-	"github.com/LyricTian/gin-admin/pkg/gormplus"
+	"github.com/rayzhoull/gin-admin/internal/app/schema"
+	"github.com/rayzhoull/gin-admin/pkg/gormplus"
 )
 
 // GetMenuDB 获取菜单存储

@@ -3,9 +3,9 @@ package model
 import (
 	"context"
 
-	"github.com/LyricTian/gin-admin/internal/app/schema"
-	icontext "github.com/LyricTian/gin-admin/internal/app/context"
-	"github.com/LyricTian/gin-admin/pkg/gormplus"
+	"github.com/rayzhoull/gin-admin/internal/app/schema"
+	icontext "github.com/rayzhoull/gin-admin/internal/app/context"
+	"github.com/rayzhoull/gin-admin/pkg/gormplus"
 	"github.com/jinzhu/gorm"
 )
 

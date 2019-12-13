@@ -1,10 +1,10 @@
 package ctl
 
 import (
-	"github.com/LyricTian/gin-admin/internal/app/bll"
-	"github.com/LyricTian/gin-admin/internal/app/errors"
-	"github.com/LyricTian/gin-admin/internal/app/ginplus"
-	"github.com/LyricTian/gin-admin/internal/app/schema"
+	"github.com/rayzhoull/gin-admin/internal/app/bll"
+	"github.com/rayzhoull/gin-admin/internal/app/errors"
+	"github.com/rayzhoull/gin-admin/internal/app/ginplus"
+	"github.com/rayzhoull/gin-admin/internal/app/schema"
 	"github.com/gin-gonic/gin"
 )
 
